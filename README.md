@@ -47,6 +47,13 @@ Above Command is used to create keySpace
 
 #### Keyspace Replication Strategies
 
+|     | Types                                     |
+| --- | ----------------------------------------- |
+| 1   | SimpleStrategy                            |
+| 2   | NetworkStrategy                           |
+| 3   | LocalStrategy                             |
+| 4   | OldNetworkTopologyStrategy (`deprecated`) |
+
 1. `Simple Strategy`
 
 - Simplest Replication Strategy
