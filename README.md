@@ -40,3 +40,10 @@ Above Command is used to create keySpace
 ###### WITH replication = {'class':'SimpleStrategy', 'replication_factor':3} 
 `replication` - defines the replication strategy for the keyspace.
 `'class':SimpleStrategy` replication strategy used is "SimpleStrategy" - Suitable for single data center setups
+
+#### Keyspace Replication Strategies
+1. `Simple Strategy` 
+Simplest Replication Strategy
+Suitable for single Data Center Setups
+Places Replicas in ring like fashion, equally distributed across nodes
+`replication_factor` specifies the number of replicas for each piece of data
