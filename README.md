@@ -7,9 +7,11 @@
 3. [Keyspace](#keyspace)
 4. [Keyspace Replication Strategies](#strategy)
 5. [Creating Tables](#tables)
-6. [Insertion into Tables](#tables)
-7. [Selection from Tables](#tables)
-8. [Author](#author)
+6. [Insertion into Table](#insert)
+7. [Selection from Table](#select)
+8. [Deletion from Table](#delete)
+9. [Updation in Table](#update)
+10. [Author](#author)
 
 ## Introduction
 
@@ -99,7 +101,7 @@ CREATE KEYSPACE IF NOT EXISTS mykeyspacelocal
 WITH replication={'class':'LocalStrategy'};
 ```
 
-## Creating Tables
+## Creating Table
 
 ```sql
 CREATE TABLE IF NOT EXISTS mykeyspace.blog (
@@ -111,7 +113,7 @@ CREATE TABLE IF NOT EXISTS mykeyspace.blog (
 
 ```
 
-## Insertion into Tables
+## Insertion into Table
 
 ```sql
 INSERT INTO mykeyspace.blog (blog_id, title, content, created_at)
@@ -119,9 +121,23 @@ VALUES (uuid(), 'First Blog', 'This is the content.', toTimestamp(now()));
 
 ```
 
-## Selection from Tables
+## Selection from Table
 
 ```sql
-SELECT title, content, created_at FROM mykeyspace.blog WHERE blog_id = ?
+SELECT title, content, created_at FROM mykeyspace.blog WHERE blog_id = be63a9f6-7a11-4cf3-b58d-8a5553531cf8;
+
+```
+
+## Deletion from Table
+
+```sql
+DELETE FROM mykeyspace.blog WHERE blog_id = be63a9f6-7a11-4cf3-b58d-8a5553531cf8 ;
+
+```
+
+## Updation in Table
+
+```sql
+UPDATE mykeyspace.blog SET content = 'Updating Blog Content' WHERE post_id = 49120981-3195-4eb2-9a0d-41ef249f17c3;
 
 ```
