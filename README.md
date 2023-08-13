@@ -1,5 +1,38 @@
 # Cassandra
 
+# Table of Contents
+
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Features](#features)
+5. [Contributing](#contributing)
+6. [License](#license)
+
+## Introduction
+
+// Your introduction content goes here
+
+## Installation
+
+// Installation instructions go here
+
+## Usage
+
+// Usage instructions go here
+
+## Features
+
+// List of features goes here
+
+## Contributing
+
+// Guidelines for contributing go here
+
+## License
+
+// License information goes here
+
 #### Introduction
 
 - Highly Scalable
