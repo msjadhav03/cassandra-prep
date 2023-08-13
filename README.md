@@ -6,8 +6,10 @@
 2. [Features](#features)
 3. [Keyspace](#keyspace)
 4. [Keyspace Replication Strategies](#strategy)
-5. [Contributing](#contributing)
-6. [Author](#author)
+5. [Creating Tables](#tables)
+6. [Insertion into Tables](#tables)
+7. [Selection from Tables](#tables)
+8. [Author](#author)
 
 ## Introduction
 
@@ -95,4 +97,31 @@ WITH replication = {'class': 'NetworkTopologyStrategy', 'datacenter1': 3, 'datac
 ```sql
 CREATE KEYSPACE IF NOT EXISTS mykeyspacelocal
 WITH replication={'class':'LocalStrategy'};
+```
+
+## Creating Tables
+
+```sql
+CREATE TABLE IF NOT EXISTS mykeyspace.blog (
+    blog_id UUID PRIMARY KEY,
+    title TEXT,
+    content TEXT,
+    created_at TIMESTAMP
+);
+
+```
+
+## Insertion into Tables
+
+```sql
+INSERT INTO mykeyspace.blog (blog_id, title, content, created_at)
+VALUES (uuid(), 'First Blog', 'This is the content.', toTimestamp(now()));
+
+```
+
+## Selection from Tables
+
+```sql
+SELECT title, content, created_at FROM mykeyspace.blog WHERE blog_id = ?
+
 ```
