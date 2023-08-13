@@ -3,37 +3,13 @@
 # Table of Contents
 
 1. [Introduction](#introduction)
-2. [Installation](#installation)
+2. [Features](#features)
 3. [Usage](#usage)
 4. [Features](#features)
 5. [Contributing](#contributing)
 6. [License](#license)
 
 ## Introduction
-
-// Your introduction content goes here
-
-## Installation
-
-// Installation instructions go here
-
-## Usage
-
-// Usage instructions go here
-
-## Features
-
-// List of features goes here
-
-## Contributing
-
-// Guidelines for contributing go here
-
-## License
-
-// License information goes here
-
-#### Introduction
 
 - Highly Scalable
 - Distributed NoSQL Database
@@ -46,7 +22,7 @@
 - Automatic Data distribution and load balancing
 - Well suited for application require high scalability, high Availability and the ability to handle large volumes of data with low latency reads and writes.
 
-### Features
+## Features
 
 1. `Distributed Architecture` - distributes data across nodes
 2. `NoSQL Model` - Column-family Data model - allowing each row to have different set of columns
