@@ -4,10 +4,10 @@
 
 1. [Introduction](#introduction)
 2. [Features](#features)
-3. [Usage](#usage)
-4. [Features](#features)
+3. [Keyspace](#keyspace)
+4. [Keyspace Replication Strategies](#strategy)
 5. [Contributing](#contributing)
-6. [License](#license)
+6. [Author](#author)
 
 ## Introduction
 
@@ -37,7 +37,7 @@
 11. `Multi-Data Center Support` - allowing to replicate data across geographically distributed locatiosn and improved data locality and disaster recovery.
 12. `Secondary Indexes` - Supports Seconday indexes to querying on non-primary column
 
-#### KeySpace (Database)
+## KeySpace (Database)
 
 Creating keyspace
 
@@ -54,7 +54,7 @@ Above Command is used to create keySpace
 `replication` - defines the replication strategy for the keyspace.
 `'class':SimpleStrategy` replication strategy used is "SimpleStrategy" - Suitable for single data center setups
 
-#### Keyspace Replication Strategies
+## Keyspace Replication Strategies
 
 |     | Types                                     |
 | --- | ----------------------------------------- |
