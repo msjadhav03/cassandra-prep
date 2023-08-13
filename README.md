@@ -18,7 +18,7 @@
 1. `Distributed Architecture` - distributes data across nodes
 2. `NoSQL Model` - Column-family Data model - allowing each row to have different set of columns
 3. `Scalability` - Scale horizontally by adding more nodes to the cluster
-4. High Availability - replicated data across nodes
+4. `High Availability` - replicated data across nodes
 5. `Tunable Consistency Level` - Allowing developers to balance between data consistency and availability based on their application's requirement
 6. `Query Language` - CQL - resembles SQL
 7. `Data Compression` - Supports Data compression to reduce storage requirements and improve performance
