@@ -39,7 +39,7 @@
 
 ## KeySpace (Database)
 
-Creating keyspace
+###### Creating keyspace
 
 ```sql
 CREATE KEYSPACE IF NOT EXISTS database_name
@@ -54,12 +54,18 @@ Above Command is used to create keySpace
 `replication` - defines the replication strategy for the keyspace.
 `'class':SimpleStrategy` replication strategy used is "SimpleStrategy" - Suitable for single data center setups
 
+###### Describing Keyspace
+
+```sql
+DESC keyspace_name
+```
+
 ## Keyspace Replication Strategies
 
 |     | Types                                     |
 | --- | ----------------------------------------- |
 | 1   | SimpleStrategy                            |
-| 2   | NetworkStrategy                           |
+| 2   | NetworkTopologyStrategy                   |
 | 3   | LocalStrategy                             |
 | 4   | OldNetworkTopologyStrategy (`deprecated`) |
 
@@ -69,3 +75,24 @@ Above Command is used to create keySpace
 - Suitable for single Data Center Setups
 - Places Replicas in ring like fashion, equally distributed across nodes
 - `replication_factor` specifies the number of replicas for each piece of data
+
+2. `NetworkTopologyStrategy`
+
+- Used for mutiple Data Center
+- allows to define different replication factor for different datacenters
+
+```sql
+CREATE KEYSPACE IF NOT EXISTS mykeyspace
+WITH replication = {'class': 'NetworkTopologyStrategy', 'datacenter1': 3, 'datacenter2': 2};
+```
+
+3. `LocalStrategy`
+
+- Used for mutiple datacenters
+- Each data center is responsible for their replication factor
+- Used when data centers are independent of each other
+
+```sql
+CREATE KEYSPACE IF NOT EXISTS mykeyspacelocal
+WITH replication={'class':'LocalStrategy'};
+```

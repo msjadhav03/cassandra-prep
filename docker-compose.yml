@@ -1,0 +1,15 @@
+version: "3"
+services:
+  cassandra:
+    image: cassandra:latest
+    container_name: my-cassandra-container
+    ports:
+      - "9042:9042" # Cassandra native protocol port
+    environment:
+      - CASSANDRA_CLUSTER_NAME=MyCluster
+      - CASSANDRA_DC=datacenter1
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+    volumes:
+      - cassandra-data:/var/lib/cassandra
+volumes:
+  cassandra-data:
