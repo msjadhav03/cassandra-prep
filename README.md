@@ -1,5 +1,7 @@
 # Cassandra
-
+<p>  
+    <img src="https://en.wikipedia.org/wiki/Apache_Cassandra#/media/File:Cassandra_logo.svg" alt="Angular Logo" height="260">
+</p>
 # Table of Contents
 
 1. [Introduction](#introduction)
