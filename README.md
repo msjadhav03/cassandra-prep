@@ -2,6 +2,7 @@
 <p>  
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cassandra_logo.svg/220px-Cassandra_logo.svg.png" alt="Cassandra Logo" height="260">
 </p>
+
 # Table of Contents
 
 1. [Introduction](#introduction)
