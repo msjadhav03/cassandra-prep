@@ -1,6 +1,6 @@
 # Cassandra
 <p>  
-    <img src="https://en.wikipedia.org/wiki/Apache_Cassandra#/media/File:Cassandra_logo.svg" alt="Angular Logo" height="260">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Cassandra_logo.svg/220px-Cassandra_logo.svg.png" alt="Cassandra Logo" height="260">
 </p>
 # Table of Contents
 
